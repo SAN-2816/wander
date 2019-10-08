@@ -1,18 +1,17 @@
 {
   "files": {
     "main.css": "//san-2816.github.io/wander/static/css/main.d498bfb3.chunk.css",
-    "main.js": "//san-2816.github.io/wander/static/js/main.21916487.chunk.js",
-    "main.js.map": "//san-2816.github.io/wander/static/js/main.21916487.chunk.js.map",
+    "main.js": "//san-2816.github.io/wander/static/js/main.459557a1.chunk.js",
+    "main.js.map": "//san-2816.github.io/wander/static/js/main.459557a1.chunk.js.map",
     "runtime-main.js": "//san-2816.github.io/wander/static/js/runtime-main.9a769995.js",
     "runtime-main.js.map": "//san-2816.github.io/wander/static/js/runtime-main.9a769995.js.map",
     "static/css/2.0624914a.chunk.css": "//san-2816.github.io/wander/static/css/2.0624914a.chunk.css",
-    "static/js/2.504eba87.chunk.js": "//san-2816.github.io/wander/static/js/2.504eba87.chunk.js",
-    "static/js/2.504eba87.chunk.js.map": "//san-2816.github.io/wander/static/js/2.504eba87.chunk.js.map",
+    "static/js/2.c9b5dc18.chunk.js": "//san-2816.github.io/wander/static/js/2.c9b5dc18.chunk.js",
+    "static/js/2.c9b5dc18.chunk.js.map": "//san-2816.github.io/wander/static/js/2.c9b5dc18.chunk.js.map",
     "index.html": "//san-2816.github.io/wander/index.html",
-    "precache-manifest.f19b6b2579c81961608e9e35a02b6c56.js": "//san-2816.github.io/wander/precache-manifest.f19b6b2579c81961608e9e35a02b6c56.js",
+    "precache-manifest.5842e0d741f3571d9355318cf7256dff.js": "//san-2816.github.io/wander/precache-manifest.5842e0d741f3571d9355318cf7256dff.js",
     "service-worker.js": "//san-2816.github.io/wander/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "//san-2816.github.io/wander/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.d498bfb3.chunk.css.map": "//san-2816.github.io/wander/static/css/main.d498bfb3.chunk.css.map",
-    "static/media/4peeps.jpg": "//san-2816.github.io/wander/static/media/4peeps.67e08c6a.jpg"
+    "static/css/main.d498bfb3.chunk.css.map": "//san-2816.github.io/wander/static/css/main.d498bfb3.chunk.css.map"
   }
 }

@@ -1,32 +1,27 @@
-import React from 'react';
-import Fpeeps from './Images/4peeps.jpg';
+import React, {Component} from 'react';
+import Footer from "./Component/Footer";
+import Menu from "./Component/Menu";
+import Login from "./Component/Login";
 
-function App() {
-  return (
+class App extends Component{
+  render(){
+    return(
+      <div className="app">
+        <Title/>
+        <Login/>
+      </div>
+    );
+  }
+}
+
+function Title(){
+  return(
     <div>
       <h1>
         WANDERLAND
       </h1>
-      <Menu/>
-      <Image/>
     </div>
-  );
-}
-
-function Menu(){
-  return (
-    <div>
-      <li>HOME</li>
-      <li>ABOUT</li>
-    </div>
-  );
-}
-function Image(){
-  return(
-    <div>
-      <img src={Fpeeps} alt={"Fpeeps"}/>
-    </div>
-  );
+  )
 }
 
 export default App;

@@ -8,7 +8,9 @@ class App extends Component{
     return(
       <div className="app">
         <Title/>
+        <Menu/>
         <Login/>
+        <Footer/>
       </div>
     );
   }

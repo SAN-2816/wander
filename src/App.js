@@ -19,7 +19,7 @@ class App extends Component{
 function Title(){
   return(
     <div>
-      <h1>
+      <h1 className="title">
         WANDERLAND
       </h1>
     </div>

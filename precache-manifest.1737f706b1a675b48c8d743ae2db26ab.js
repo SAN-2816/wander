@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7e342a9c8dacc9ffdff75e21f5d87822",
+    "revision": "e9a8a70d76316a1097dbfb64c3530636",
     "url": "//san-2816.github.io/wander/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//san-2816.github.io/wander/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "378a0a28379dfa7cb6c6",
+    "revision": "9da8944c59dab29fb8ff",
     "url": "//san-2816.github.io/wander/static/css/main.d498bfb3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//san-2816.github.io/wander/static/js/2.184d7864.chunk.js"
   },
   {
-    "revision": "378a0a28379dfa7cb6c6",
-    "url": "//san-2816.github.io/wander/static/js/main.e6f26688.chunk.js"
+    "revision": "9da8944c59dab29fb8ff",
+    "url": "//san-2816.github.io/wander/static/js/main.948d55be.chunk.js"
   },
   {
     "revision": "bec72dc27f011bb01fb2",

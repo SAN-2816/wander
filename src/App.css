@@ -5,3 +5,6 @@
     margin: 0 auto; /* 페이지 중앙 정렬 */
     margin-top: 4rem;
   }
+  .title {
+    color: dodgerblue;
+  }

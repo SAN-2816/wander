@@ -1,14 +1,11 @@
 import React from 'react'; 
+import banner from '../Images/wander_main.jpeg'
 
 function Menu(){
     return (
-        <div>
-            <li>어플소개</li>
-            <li>이벤트 참여</li>
-            <li>회사 소개</li>
-            <li>회사 위치</li>
+        <div className="banner">
+            <img className="banner_image" alt=""  src={banner}/>  
         </div>
     )
 }
-
 export default Menu; 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Footer from "./Component/Footer";
-import Menu from "./Component/Menu";
-import Login from "./Component/Login";
+import Routes from "./Component/Routes";
+
 import './App.css';
 
 class App extends Component{
@@ -11,9 +11,7 @@ class App extends Component{
         <h1 className="title">
           WANDERLAND
         </h1>
-        <Menu/>
-        <Login/>
-        <Footer/>
+        <Routes/>
       </div>
     );
   }

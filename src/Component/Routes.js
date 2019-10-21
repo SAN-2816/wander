@@ -5,9 +5,9 @@ import Home from "../Pages/Home";
 
 export default () => (
 <Router>
-    <Route exact path="/" componet={Home}/>
+    <Route exact path="/" component={Home}/>
     <Switch>
         <Route path="/tutorial" component={Tutorial} />
     </Switch>
 </Router>
-  )
+)

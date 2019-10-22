@@ -12,9 +12,8 @@ export default () => (
     </h1>
     <Route exact path={process.env.PUBLIC_URL+"/"} component={Home}/>
     <Switch>
-        <Route path="/tutorial" component={Tutorial} />
+        <Route path="/tutorial" component={Tutorial}/>
         <Route path="/login" component={Login}/>
     </Switch>
-    
 </Router>
 )

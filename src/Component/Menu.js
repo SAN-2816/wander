@@ -13,7 +13,7 @@ function Menu({location, name, day, link}){
         <div className="menu_arrow">
             <img className="arrow_image" alt=""  src={arrow}/>
         </div>
-        <Link to="login">
+        <Link to="/login">
             <div className="menu_go">
             GO
             </div>

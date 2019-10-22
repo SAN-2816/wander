@@ -1,4 +1,5 @@
 import React from 'react'; 
+import {Link} from "react-router-dom"
 import arrow from '../Images/menu_arrow.png'
 
 function Menu({location, name, day, link}){
@@ -12,9 +13,12 @@ function Menu({location, name, day, link}){
         <div className="menu_arrow">
             <img className="arrow_image" alt=""  src={arrow}/>
         </div>
-        <div className="menu_go">
+        <Link to="login">
+            <div className="menu_go">
             GO
-        </div>
+            </div>
+        </Link>
+        
     </div>
     )
 }

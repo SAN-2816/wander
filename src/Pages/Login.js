@@ -25,7 +25,9 @@ class Login extends Component{
             <section className="container">
                 <form className="LoginForm">
                     <input className="form-control" type="email" id="inputEmail"  placeholder="이메일 주소" name="email" onChange={this.handleChange}/>
+                    <br></br>
                     <input className="form-control" type="password" id="inputPhone"  placeholder="휴대폰 번호( - 없이 입력)" name="phone" onChange={this.handleChange}/>
+                    <br></br>
                     <button className="btn btn-lg btn-primary btn-block" type="button" onClick={this.handleOnClick}> 로그인 </button>
                 </form>
             </section>

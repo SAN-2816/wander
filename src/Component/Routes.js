@@ -1,13 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+//import Footer from "../Component/Footer"
 import Tutorial from "../Pages/Tutorial";
 import Home from "../Pages/Home";
+import Login from "../Pages/Login";
 
 export default () => (
 <Router>
-    <Route exact path="/" component={Home}/>
+    <h1 className="title">
+        <a href={process.env.PUBLIC_URL+"/"} style={{textDecoration: "none"}}>WANDERLAND</a>
+    </h1>
+    <Route exact path={process.env.PUBLIC_URL+"/"} component={Home}/>
     <Switch>
         <Route path="/tutorial" component={Tutorial} />
+        <Route path="/login" component={Login}/>
     </Switch>
+    
 </Router>
 )

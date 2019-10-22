@@ -7,9 +7,6 @@ class App extends Component{
   render(){
     return(
       <div className="app">
-        <h1 className="title">
-          WANDERLAND
-        </h1>
         <Routes/>
       </div>
     );

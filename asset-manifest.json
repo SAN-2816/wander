@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wander/static/css/main.dccd5e89.chunk.css",
+    "main.css": "/wander/static/css/main.f6c9deed.chunk.css",
     "main.js": "/wander/static/js/main.2fe66ff4.chunk.js",
     "main.js.map": "/wander/static/js/main.2fe66ff4.chunk.js.map",
     "runtime-main.js": "/wander/static/js/runtime-main.1336979d.js",
@@ -9,10 +9,10 @@
     "static/js/2.db8873e4.chunk.js": "/wander/static/js/2.db8873e4.chunk.js",
     "static/js/2.db8873e4.chunk.js.map": "/wander/static/js/2.db8873e4.chunk.js.map",
     "index.html": "/wander/index.html",
-    "precache-manifest.9fd7bf0b84c892f91ece01ea2aec40bd.js": "/wander/precache-manifest.9fd7bf0b84c892f91ece01ea2aec40bd.js",
+    "precache-manifest.ffe502f882e19570d860d08d97ce665a.js": "/wander/precache-manifest.ffe502f882e19570d860d08d97ce665a.js",
     "service-worker.js": "/wander/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/wander/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.dccd5e89.chunk.css.map": "/wander/static/css/main.dccd5e89.chunk.css.map",
+    "static/css/main.f6c9deed.chunk.css.map": "/wander/static/css/main.f6c9deed.chunk.css.map",
     "static/media/event_banner.jpeg": "/wander/static/media/event_banner.0bd07e22.jpeg",
     "static/media/tutorial_image.jpeg": "/wander/static/media/tutorial_image.278e98c6.jpeg"
   }

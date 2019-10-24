@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import user from '../Models/user'
-import { Link } from "react-router-dom";
 
 class Login extends Component{
     
@@ -17,9 +16,9 @@ class Login extends Component{
             [e.target.name]: e.target.value //target의 name을 가져옴.
         }); 
     };
-    handleOnClick = () => {
-        console.log(user(this.state.email, this.state.phone));
-            /* if(user(this.state.email, this.state.phone)){
+    handleOnClick = async ()  => {
+        console.log(await user(this.state.email, this.state.phone));
+        /* if(await user(this.state.email, this.state.phone)){
             this.setState({isLoging: true});
             window.open('/quizhome');
         }else{

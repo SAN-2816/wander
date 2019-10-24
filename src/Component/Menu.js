@@ -18,7 +18,6 @@ function Menu({location, name, day, link}){
             GO
             </div>
         </Link>
-        
     </div>
     )
 }

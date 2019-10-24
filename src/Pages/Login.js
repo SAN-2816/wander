@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import user from '../Models/user'
+import { Link } from "react-router-dom";
 
 class Login extends Component{
     
@@ -17,8 +18,13 @@ class Login extends Component{
         }); 
     };
     handleOnClick = () => {
-        this.setState({isLoging: true});
-        user(this.state.email, this.state.phone);
+        console.log(user(this.state.email, this.state.phone));
+            /* if(user(this.state.email, this.state.phone)){
+            this.setState({isLoging: true});
+            window.open('/quizhome');
+        }else{
+            alert("이메일과 전화번호를 확인해주세요.");
+        } */
     }
     render(){
         return (
@@ -28,7 +34,7 @@ class Login extends Component{
                     <br></br>
                     <input className="form-control" type="password" id="inputPhone"  placeholder="휴대폰 번호( - 없이 입력)" name="phone" onChange={this.handleChange}/>
                     <br></br>
-                    <button className="btn btn-lg btn-primary btn-block" type="button" onClick={this.handleOnClick}> 로그인 </button>
+                    <button className="btn btn-lg btn-primary btn-block" type="button" onClick={this.handleOnClick}>게임 시작</button>
                 </form>
             </section>
         );

@@ -1,29 +1,44 @@
 import React, {Component} from 'react';
 import user from '../Models/user'
-
+import { instanceOf } from 'prop-types';
+import { withCookies, Cookies } from 'react-cookie';
+ 
 class Login extends Component{
-    
+    static propTypes = {
+        cookies: instanceOf(Cookies).isRequired
+      };
     constructor(props) {//초기값 설정
         super(props);
         this.state = {
             email: "",
             phone: "",
-            isLoging: false
+            isLoging: false,
+            quiz_name: this.props.location.state.quiz_name
         };
     };
+    
     handleChange = (e) => { 
         this.setState({ 
             [e.target.name]: e.target.value //target의 name을 가져옴.
         }); 
+        
     };
     handleOnClick = async ()  => {
-        console.log(await user(this.state.email, this.state.phone));
-        /* if(await user(this.state.email, this.state.phone)){
-            this.setState({isLoging: true});
-            window.open('/quizhome');
-        }else{
+        if(this.state.email === "" || this.state.email === null || this.state.email === undefined ||
+        this.state.phone === "" || this.state.phone === null || this.state.phone === undefined){
             alert("이메일과 전화번호를 확인해주세요.");
-        } */
+        }else{
+            const data = await user(this.state.email, this.state.phone);
+            if(data.complete){
+                this.setState({isLoging: true});
+                const { cookies } = this.props;
+                cookies.set('_id', data._id, { path: '/' });
+                cookies.set('token', data.token, { path: '/' });
+                window.location.href=`/quizhome/${this.state.quiz_name}`;
+            }else{
+                alert("이메일과 전화번호를 확인해주세요.");
+            }
+        }
     }
     render(){
         return (
@@ -39,4 +54,4 @@ class Login extends Component{
         );
     };
 }
-export default Login;
+export default withCookies(Login);

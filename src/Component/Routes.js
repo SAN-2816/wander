@@ -15,7 +15,7 @@ export default () => (
     <Switch>
         <Route path="/tutorial" component={Tutorial}/>
         <Route path="/login" component={Login}/>
-        <Route path="/quizhome" component={QuizHome}/>
+        <Route path="/quizhome/:quiz_name" component={QuizHome}/>
     </Switch>
 </Router>
 )

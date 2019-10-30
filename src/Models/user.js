@@ -1,4 +1,3 @@
-
 import axios from 'axios';
 
 async function user(email, phone) {
@@ -10,12 +9,12 @@ async function user(email, phone) {
             email: email,
             phone: phone
         });
-        
         return response.data;
     }
     catch (error) {
         console.log(error);
     }
 }
+
 
 export default user;

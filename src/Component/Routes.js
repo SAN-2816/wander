@@ -5,6 +5,7 @@ import Tutorial from "../Pages/Tutorial";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import QuizHome from "../Pages/QuizHome";
+import QuizPage from "../Pages/QuizPage";
 
 export default () => (
 <Router>
@@ -16,6 +17,7 @@ export default () => (
         <Route path="/tutorial" component={Tutorial}/>
         <Route path="/login" component={Login}/>
         <Route path="/quizhome/:quiz_name" component={QuizHome}/>
+        <Route path="/quizpage/:quiz_name/:stage" component={QuizPage}/>
     </Switch>
 </Router>
 )

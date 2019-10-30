@@ -13,21 +13,29 @@ class QuizHome extends Component{
         super(props);
         const { cookies, match} = this.props;
         this.state = {
-            user_id: cookies.get('_id'),
+            user_id: cookies.get('user_id'),
             token: cookies.get('token'),
             quiz_name: match.params.quiz_name,
-            stage: 1
+            stage: match.params.stage
         };
     };
     componentDidMount= async ()  => {
-        const data = await quizModel(this.state.user_id, this.state.quiz_name);
-        console.log(this.state.quiz_name);
+        const data = await quizModel(this.state.user_id, this.state.quiz_name, this.state.stage);
         console.log(data);
+        this.setState({
+            stage: data.quizzes.stage
+        });
     }
     render(){
         return(
-            <div>
-                <Quiz/>
+            <div className='quizHome'>
+                <div className='quizTitle'>Quiz</div>
+                <div className='quizName'>{this.state.quiz_name}</div>
+                <center>
+                    <Quiz name={this.state.quiz_name} num='1' comment='' success='1'/>
+                    <Quiz name={this.state.quiz_name} num='2' comment='' success='0'/>
+                    <Quiz name={this.state.quiz_name} num='3' comment='' success='0'/>
+                </center>
             </div>
         )
     };

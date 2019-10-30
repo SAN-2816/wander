@@ -19,12 +19,12 @@ class Home extends Component{
                     location="종로"
                     name="낙산 공원"
                     day="19.11.02(토)"
-                    link=""
+                    link="0"
                     />
                     <Menu
                     name="커밍쑨"
                     day="19.XX.XX"
-                    link=""
+                    link="0"
                     />
                 </div>
             </div>

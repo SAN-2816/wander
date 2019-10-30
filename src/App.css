@@ -66,3 +66,29 @@ html, body{
 .LoginForm{
   margin-top: 50%;
 }
+
+.quizHome{
+  min-height: 100%;
+}
+.quizTitle{
+  color: #006BFF;
+  font-size: 40px;
+  margin-left: 20px;
+}
+.quizName{
+  color: rgb(87, 87, 87);
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.quiz{
+  color: whitesmoke;
+  text-align: center;
+  font-size: 50px;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #006BFF;
+  margin-bottom: 80px;
+}

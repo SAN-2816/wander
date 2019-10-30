@@ -1,9 +1,9 @@
 
 import axios from 'axios';
 
-async function quizModel(_id, quiz_name, stage) {
+async function checkQuiz(_id, quiz_name, stage) {
     try {
-        const response = await axios.post('https://wanderland.site/api/quiz/join', {
+        const response = await axios.post('https://wanderland.site/api/quiz/update', {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
@@ -21,4 +21,4 @@ async function quizModel(_id, quiz_name, stage) {
     }
 }
 
-export default quizModel;
+export default checkQuiz;

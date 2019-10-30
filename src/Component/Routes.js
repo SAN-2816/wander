@@ -14,10 +14,10 @@ export default () => (
     </h1>
     <Route exact path={process.env.PUBLIC_URL+"/"} component={Home}/>
     <Switch>
-        <Route path="/tutorial" component={Tutorial}/>
+        <Route exact path={process.env.PUBLIC_URL+"/tutorial"} component={Tutorial}/>
         <Route path="/login" component={Login}/>
         <Route path="/quizhome/:quiz_name" component={QuizHome}/>
-        <Route path="/quizpage/:quiz_name/:stage" component={QuizPage}/>
+        <Route path="/quizpage/:quiz_name/:fake/:stage" component={QuizPage}/>
     </Switch>
 </Router>
 )

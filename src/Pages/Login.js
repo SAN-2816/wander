@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Redirect} from "react-router-dom"
+import {Redirect, Link} from "react-router-dom"
 import user from '../Models/user'
 import autoLogin from '../Models/autoLogin'
 import { instanceOf } from 'prop-types';
@@ -70,15 +70,18 @@ class Login extends Component{
             return (
                 <section className="container">
                     <form className="LoginForm">
-                        <input className="form-control" type="email" id="inputEmail"  placeholder="이메일 주소" name="email" onChange={this.handleChange}/>
+                        <input className="form-control" type="email" id="inputEmail"  placeholder="EMAIL" name="email" onChange={this.handleChange}/>
                         <br></br>
-                        <input className="form-control" type="password" id="inputPhone"  placeholder="휴대폰 번호( - 없이 입력)" name="phone" onChange={this.handleChange}/>
+                        <input className="form-control" type="number" id="inputPhone"  placeholder="PHONE( - 없이 입력)" name="phone" onChange={this.handleChange}/>
                         <br></br>
                         <button className="btn btn-lg btn-primary btn-block" 
                                 type="button" onClick={this.handleOnClick}>
-                                    게임 시작
+                                    START
                         </button>
                     </form>
+                    <br></br>
+                    <div className='agree'><Link to="/privacy">개인정보처리방침</Link></div>
+                    <div className='agree'><Link to="/agree">이용 약관</Link></div>
                 </section>
             );
         }

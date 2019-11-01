@@ -31,7 +31,7 @@ class QuizPage extends Component{
         return(
             <div>
             <Link to={`/quizhome/${this.state.quiz_name}`}>
-                <div className='quizTitle' style={{color: '#006BFF'}}>Quiz {this.state.stage}</div>
+                <div className='quizTitle' style={{color: '#006BFF'}}>{`< `}Quiz {this.state.stage}</div>
             </Link>
                 <img className="quiz_img" src={window.location.origin+"/quizzes/chungang/"+this.state.fake+".jpg"} alt=""/>
                 <div className="quiz_comment">해당 장소로 가서 QR코드를 찾으세요.</div>

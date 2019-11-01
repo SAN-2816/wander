@@ -6,6 +6,8 @@ import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import QuizHome from "../Pages/QuizHome";
 import QuizPage from "../Pages/QuizPage";
+import agreePage from "../Pages/agreePage"
+import privacyPage from "../Pages/privacyPage"
 
 export default () => (
 <Router>
@@ -16,8 +18,11 @@ export default () => (
     <Switch>
         <Route exact path={process.env.PUBLIC_URL+"/tutorial"} component={Tutorial}/>
         <Route path="/login" component={Login}/>
+        <Route path="/agree" component={agreePage}/>
+        <Route path="/privacy" component={privacyPage}/>
         <Route path="/quizhome/:quiz_name" component={QuizHome}/>
         <Route path="/quizpage/:quiz_name/:fake/:stage" component={QuizPage}/>
+        
     </Switch>
 </Router>
 )
